@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "spinning-ascii-donut-star"
+version = "0.1.0"
+description = "A spinning 3D star in your terminal: configurable points, ring and hub, rendered as z-buffered ASCII art (donut.c style)."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "Marty Lauterbach" }]
+keywords = ["ascii", "ascii-art", "terminal", "animation", "3d", "donut", "star"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Environment :: Console",
+  "Topic :: Artistic Software",
+  "Topic :: Terminals",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/mklemmingen/spinning-ascii-donut-star"
+
+[project.scripts]
+spinning-ascii-donut-star = "spinning_ascii_donut_star.cli:main"
+
